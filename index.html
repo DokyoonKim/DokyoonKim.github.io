@@ -1,3 +1,38 @@
+
+<link rel="manifest" href="manifest.json">
+
+<base href="/">
+
+<meta charset="UTF-8">
+<meta content="IE=Edge" http-equiv="X-UA-Compatible">
+<meta name="description" content="A new Flutter project.">
+
+<!-- iOS meta tags & icons -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="test">
+<link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+<title>test</title>
+<link rel="manifest" href="manifest.json">
+
+
+
+<!-- https://stackoverflow.com/questions/21125337/how-to-detect-if-web-app-running-standalone-on-chrome-mobile/34516083#34516083 -->
+<div>Are you in Standalone mode?</div>
+<div id="standalone">___</div>
+
+<script>
+    navigator.serviceWorker.register("service-worker.js")
+
+    var isStandalone = window.matchMedia('(display-mode: standalone)').matches
+    
+    var answer = document.getElementById("standalone")
+    answer.textContent = isStandalone
+</script>
+
+<br>
+
 <div>Teachable Machine Image Model</div>
 <button type="button" onclick="init()">Start</button>
 <div id="webcam-container"></div>
@@ -57,3 +92,5 @@
         }
     }
 </script>
+
+
