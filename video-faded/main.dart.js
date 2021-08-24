@@ -45562,7 +45562,7 @@ F.pT.prototype={
 aT:function(){return new F.DT(C.n)}}
 F.DT.prototype={
 bb:function(){this.bE()
-var s=new V.B9("assets/video.mp4",new V.rK(C.o,C.o,C.dD,C.hd,!1,!1,!1,1,1,null,C.M,!1),new P.bI(t.V))
+var s=new V.B9("assets/video_faded.mp4",new V.rK(C.o,C.o,C.dD,C.hd,!1,!1,!1,1,1,null,C.M,!1),new P.bI(t.V))
 s.el(0).bc(0,new F.VB(this),t.P)
 $.GX=s},
 R:function(a,b){return new S.pJ(new F.xe(null),null)}}
