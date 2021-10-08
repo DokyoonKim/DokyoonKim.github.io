@@ -148,7 +148,10 @@ function quad(a, b, c, d) {
 
 
 // Render function
-function render() {
+function render(thetaInput) {
+
+    if(thetaInput != undefined) theta = thetaInput;
+
     gl.clear( gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
     // eye point
     eye = vec3(radius*Math.cos(theta)*Math.sin(phi), radius*Math.sin(theta), radius*Math.cos(theta)*Math.cos(phi));
